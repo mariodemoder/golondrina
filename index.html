@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Golondrina - Soporte Migratorio LATAM → España</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0d6efd, #0a58ca);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 60px 0 30px;
+        }
+
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        footer {
+            background-color: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a i {
+            margin-right: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <img src="logo.png" alt="Logo Golondrina" width="100" class="mb-3" data-aos="fade-down">
+        <h1 data-aos="fade-up">Golondrina</h1>
+        <p class="lead" data-aos="fade-up" data-aos-delay="100">Acompañamos tu vuelo hacia una nueva vida en España</p>
+        <a href="#contacto" class="btn btn-light mt-3" data-aos="fade-up" data-aos-delay="200"><i
+                class="fas fa-calendar-check"></i> Solicita tu cita</a>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="container" id="experiencia">
+        <h2 class="section-title" data-aos="fade-up">Nuestra Experiencia</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+            Con más de 8 años de experiencia en asesoría migratoria, Golondrina ha ayudado a cientos de personas de
+            Latinoamérica
+            a establecerse legalmente en España. Nuestro equipo multidisciplinario ofrece orientación legal, laboral y
+            cultural
+            para que tu proceso migratorio sea seguro y exitoso.
+        </p>
+    </section>
+
+    <!-- Casos de Éxito -->
+    <section class="container" id="casos">
+        <h2 class="section-title" data-aos="fade-up">Casos de Éxito</h2>
+        <div class="testimonial" data-aos="fade-right">
+            <p>
+                <strong><i class="fas fa-user"></i> Ana (Perú)</strong>: “Gracias a Golondrina pude organizar mis
+                papeles y empezar a trabajar en Madrid.”
+                <br>
+                <a href="https://www.linkedin.com/in/ana-rodriguez-peru" target="_blank">
+                    <i class="fab fa-linkedin text-primary"></i> Ver perfil
+                </a>
+            </p>
+        </div>
+
+        <div class="testimonial" data-aos="fade-left">
+            <p><strong><i class="fas fa-user"></i> Jorge (Colombia)</strong>: “Me ayudaron a homologar mi título y
+                encontrar oportunidades laborales en Barcelona.”
+                <br>
+                <a href="https://www.linkedin.com/in/jorge-martinez-colombia" target="_blank">
+                    <i class="fab fa-linkedin text-primary"></i> Ver perfil
+                </a>
+            </p>
+        </div>
+        <div class="testimonial" data-aos="fade-right">
+            <p><strong><i class="fas fa-user"></i> Valeria (Argentina)</strong>: “El equipo me asesoró con mi residencia
+                y me conectó con una red de apoyo local.”
+                <br>
+                <a href="https://www.linkedin.com/in/valeria-gomez-argentina" target="_blank">
+                    <i class="fab fa-linkedin text-primary"></i> Ver perfil
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container my-5">
+        <h2 class="section-title" data-aos="fade-up">Contáctanos</h2>
+        <form id="contactForm" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+            </div>
+                <div class="mb-3">
+                <label for="pais" class="form-label">País de origen</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                    <img id="flag-icon" src="flags/4x3/ar.svg" width="24" alt="Bandera">
+                    </span>
+                    <select id="pais" class="form-select" required>
+                        <option value="">Selecciona tu país</option>
+                        <option value="ar" data-flag="fi fi-ar">Argentina</option>
+                        <option value="bo" data-flag="fi fi-bo">Bolivia</option>
+                        <option value="br" data-flag="fi fi-br">Brasil</option>
+                        <option value="cl" data-flag="fi fi-cl">Chile</option>
+                        <option value="co" data-flag="fi fi-co">Colombia</option>
+                        <option value="cr" data-flag="fi fi-cr">Costa Rica</option>
+                        <option value="cu" data-flag="fi fi-cu">Cuba</option>
+                        <option value="do" data-flag="fi fi-do">República Dominicana</option>
+                        <option value="ec" data-flag="fi fi-ec">Ecuador</option>
+                        <option value="sv" data-flag="fi fi-sv">El Salvador</option>
+                        <option value="gt" data-flag="fi fi-gt">Guatemala</option>
+                        <option value="hn" data-flag="fi fi-hn">Honduras</option>
+                        <option value="mx" data-flag="fi fi-mx">México</option>
+                        <option value="ni" data-flag="fi fi-ni">Nicaragua</option>
+                        <option value="pa" data-flag="fi fi-pa">Panamá</option>
+                        <option value="py" data-flag="fi fi-py">Paraguay</option>
+                        <option value="pe" data-flag="fi fi-pe">Perú</option>
+                        <option value="pr" data-flag="fi fi-pr">Puerto Rico</option>
+                        <option value="uy" data-flag="fi fi-uy">Uruguay</option>
+                        <option value="ve" data-flag="fi fi-ve">Venezuela</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="¿En qué trámite necesitas ayuda?"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Golondrina | Soporte Migratorio LATAM → España
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+        });
+    
+        const paisSelect = document.getElementById('pais');
+        const flagIcon = document.getElementById('flag-icon');
+
+        paisSelect.addEventListener('change', function() {
+            if (this.value) {
+            flagIcon.src = `flags/4x3/${this.value}.svg`;
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
